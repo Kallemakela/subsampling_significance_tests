@@ -10,9 +10,9 @@ Presents a method for variance correction in subsampling methods, such as repeat
 
 The corrected variance is:
 
-$(\frac{1}{n} + \frac{n_{\text{test}}}{n_{\text{train}}}) * \text{Var}(x)$
+$(\frac{1}{J} + \frac{n_{\text{test}}}{n_{\text{train}}}) * \text{Var}(x)$
 
-where n is the number of comparisons (e.g. k*r in repeated k-fold), n_test is the number of test samples, n_train is the number of training samples, and Var(x) is the standard variance of the performance measure.
+where J is the number of comparisons (e.g. k*r in repeated k-fold), n_test is the number of test samples, n_train is the number of training samples, and Var(x) is the standard variance of the performance measure.
 
 Nadeau, C., Bengio, Y. Inference for the Generalization Error. Machine Learning 52, 239–281 (2003). https://doi.org/10.1023/A:1024068626366
 https://scikit-learn.org/stable/auto_examples/model_selection/plot_grid_search_stats.html#comparing-two-models-frequentist-approach
